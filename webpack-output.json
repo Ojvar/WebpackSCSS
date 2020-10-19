@@ -1,0 +1,316 @@
+{
+  "context": "/home/blue/tmp/vue3-experiment",
+  "mode": "development",
+  "entry": {
+    "undefined": [
+      "/home/blue/tmp/vue3-experiment/src/app.scss"
+    ]
+  },
+  "output": {
+    "path": "/home/blue/tmp/vue3-experiment/public",
+    "filename": "[name].js",
+    "chunkFilename": "[name].js",
+    "publicPath": "/"
+  },
+  "module": {
+    "rules": [
+      {
+        "test": {},
+        "loaders": [
+          "html-loader"
+        ]
+      },
+      {
+        "test": {},
+        "loaders": [
+          {
+            "loader": "file-loader",
+            "options": {
+              "publicPath": "/"
+            }
+          },
+          {
+            "loader": "img-loader",
+            "options": {
+              "enabled": true,
+              "gifsicle": {},
+              "mozjpeg": {},
+              "optipng": {},
+              "svgo": {}
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "loader": "file-loader",
+        "options": {
+          "publicPath": "/"
+        }
+      },
+      {
+        "test": {},
+        "loader": "file-loader",
+        "options": {
+          "name": "[name].[ext]?[hash]",
+          "publicPath": "/"
+        }
+      },
+      {
+        "test": "/home/blue/tmp/vue3-experiment/src/app.scss",
+        "use": [
+          {
+            "loader": "/home/blue/tmp/vue3-experiment/node_modules/extract-text-webpack-plugin/dist/loader.js",
+            "options": {
+              "id": 1,
+              "omit": 1,
+              "remove": true
+            }
+          },
+          {
+            "loader": "style-loader"
+          },
+          {
+            "loader": "css-loader",
+            "options": {
+              "url": true,
+              "sourceMap": false,
+              "importLoaders": 1
+            }
+          },
+          {
+            "loader": "postcss-loader",
+            "options": {
+              "sourceMap": true,
+              "ident": "postcss0",
+              "plugins": [
+                null
+              ]
+            }
+          },
+          {
+            "loader": "resolve-url-loader",
+            "options": {
+              "sourceMap": true,
+              "engine": "rework"
+            }
+          },
+          {
+            "loader": "sass-loader",
+            "options": {
+              "sassOptions": {
+                "precision": 8,
+                "outputStyle": "expanded"
+              },
+              "implementation": {
+                "info": "dart-sass\t1.27.0\t(Sass Compiler)\t[Dart]\ndart2js\t2.10.1\t(Dart Compiler)\t[Dart]",
+                "types": {},
+                "NULL": {},
+                "TRUE": {
+                  "value": true
+                },
+                "FALSE": {
+                  "value": false
+                }
+              },
+              "sourceMap": true
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "loaders": [
+          "style-loader",
+          {
+            "loader": "css-loader",
+            "options": {
+              "importLoaders": 1
+            }
+          },
+          {
+            "loader": "postcss-loader",
+            "options": {
+              "plugins": [
+                null
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "exclude": [
+          "/home/blue/tmp/vue3-experiment/src/app.scss"
+        ],
+        "loaders": [
+          "style-loader",
+          "css-loader",
+          {
+            "loader": "postcss-loader",
+            "options": {
+              "plugins": [
+                null
+              ]
+            }
+          },
+          {
+            "loader": "sass-loader",
+            "options": {
+              "sassOptions": {
+                "precision": 8,
+                "outputStyle": "expanded"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "exclude": [
+          "/home/blue/tmp/vue3-experiment/src/app.scss"
+        ],
+        "loaders": [
+          "style-loader",
+          "css-loader",
+          {
+            "loader": "postcss-loader",
+            "options": {
+              "plugins": [
+                null
+              ]
+            }
+          },
+          {
+            "loader": "sass-loader",
+            "options": {
+              "sassOptions": {
+                "precision": 8,
+                "outputStyle": "expanded",
+                "indentedSyntax": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "exclude": [],
+        "loaders": [
+          "style-loader",
+          "css-loader",
+          {
+            "loader": "postcss-loader",
+            "options": {
+              "plugins": [
+                null
+              ]
+            }
+          },
+          "less-loader"
+        ]
+      },
+      {
+        "test": {},
+        "exclude": [],
+        "loaders": [
+          "style-loader",
+          "css-loader",
+          {
+            "loader": "postcss-loader",
+            "options": {
+              "plugins": [
+                null
+              ]
+            }
+          },
+          "stylus-loader"
+        ]
+      }
+    ]
+  },
+  "plugins": [
+    {},
+    {
+      "compilationSuccessInfo": {},
+      "shouldClearConsole": true,
+      "formatters": [
+        null,
+        null,
+        null
+      ],
+      "transformers": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "definitions": {
+        "process.env.NODE_ENV": "\"development\""
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "filename": "/css/app.css",
+      "id": 1,
+      "options": {}
+    },
+    {
+      "options": {
+        "title": "Laravel Mix",
+        "alwaysNotify": true,
+        "hint": "int:transient:1",
+        "contentImage": "/home/blue/tmp/vue3-experiment/node_modules/laravel-mix/icons/laravel.png"
+      },
+      "lastBuildSucceeded": false,
+      "isFirstBuild": true
+    }
+  ],
+  "stats": {
+    "hash": false,
+    "version": false,
+    "timings": false,
+    "children": false,
+    "errorDetails": false,
+    "entrypoints": false,
+    "performance": false,
+    "chunks": false,
+    "modules": false,
+    "reasons": false,
+    "source": false,
+    "publicPath": false,
+    "builtAt": false
+  },
+  "performance": {
+    "hints": false
+  },
+  "optimization": {},
+  "devtool": false,
+  "devServer": {
+    "headers": {
+      "Access-Control-Allow-Origin": "*"
+    },
+    "contentBase": "/home/blue/tmp/vue3-experiment/public",
+    "historyApiFallback": true,
+    "noInfo": true,
+    "compress": true,
+    "quiet": true
+  },
+  "resolve": {
+    "extensions": [
+      "*",
+      ".wasm",
+      ".mjs",
+      ".js",
+      ".jsx",
+      ".json",
+      ".vue"
+    ],
+    "alias": {
+      "vue$": "vue/dist/vue.common.js"
+    }
+  }
+}
